@@ -1,0 +1,37 @@
+.text-font-base {
+    font-family: "Fascinate", cursive;
+}
+.container {
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.card{
+text-align:center;
+background-color: white;
+margin:5%;
+height: 400px;
+width: 250px;
+padding:20px;
+font-size:70px;
+padding-top:150px;
+border-radius: 15px;
+position:absolute;
+}
+.card:before{
+position: absolute;
+top:0;
+left:0;
+font-size:80px;
+}
+.card:after{
+position: absolute;
+bottom:0;
+right:0;
+font-size:80px;
+
+}
+.card.spade:before, .card.spade:after{content:'\2660'; }
+.card.club:before, .card.club:after{content:'\2663'; }
+.card.hearts:before, .card.hearts:after{content:'\2665';color:red; }
+.card.diams:before, .card.diams:after{content:'\2666';color:red; }
